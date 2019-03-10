@@ -8,6 +8,6 @@ internal property, which can be unstable across versions.
 */
 
 module.exports = function getResourceRelativeRequest(lc) {
-  return lc.resourcePath.substring(lc.options.context.length);
+  return lc.resourcePath.substring(lc.options.context.length - 1);
   // Or maybe This._module.NormalModule.rawRequest;
 };
