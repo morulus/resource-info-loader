@@ -12,7 +12,7 @@ module.exports = function getResourceInfoPlugin() {
   data.localPath = getResourceRelativeRequest(this);
 
   /* Property hashName is a unique name for this resource upon this project */
-  data.hashName = stringHash(data.localPath);
+  data.hashName = stringHash(this.resourcePath);
 
   return `module.exports = ${JSON.stringify(data)};`;
 };

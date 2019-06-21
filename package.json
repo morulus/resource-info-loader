@@ -1,6 +1,6 @@
 {
   "name": "resource-info-loader",
-  "version": "0.1.1",
+  "version": "0.1.2-beta",
   "description": "Load some usefull resource information",
   "main": "lib/index.js",
   "scripts": {
